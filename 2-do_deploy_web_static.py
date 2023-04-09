@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Fabfile to distribute an archive to a web server.
+# Fabfile to deploy archived webstatic content to a web server.
 import os.path
 from fabric.api import env
 from fabric.api import put
@@ -9,7 +9,7 @@ env.hosts = ["52.87.154.63", "54.90.14.0"]
 
 
 def do_deploy(archive_path):
-    """Distributes an archive to a web server.
+    """Deploys an archive to a web server.
 
     Args:
         archive_path (str): The path of the archive to distribute.
